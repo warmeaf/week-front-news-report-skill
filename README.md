@@ -4,7 +4,7 @@
 
 ## 项目简介
 
-Week Front News Report 是一个智能化的中文前端技术周刊聚合工具，基于 AI Agent + Agent Skills + MCP 架构，从高质量中文博客抓取内容，筛选生成每周 Markdown 报告。
+Week Front News Report 是一个智能化的中文前端技术周刊聚合工具，基于 AI Agent + Agent Skills + MCP 架构，从预设的数据源链接中抓取内容，筛选生成每周 Markdown 报告。
 
 ## 核心特性
 
@@ -58,15 +58,9 @@ daily-news-report/
 
 ### 基本调用
 
-```
-/week-front-news-report
-```
+在支持 Agent Skils 并配置好 Chrome DevTools MCP 的 AI 编辑器或终端工具中输入如下提示词：
 
-### 指定日期
-
-```
-/week-front-news-report 2026-01-21
-```
+`生成每周前端报告`
 
 ## 输出格式
 
