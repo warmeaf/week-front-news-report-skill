@@ -122,6 +122,11 @@ constraints:
   exclude: "泛科普/营销软文/过度学术化/招聘帖"
   max_items_per_source: 10
   skip_on_error: true
+  url_handling: |
+    - 【重要】必须从页面中提取真实的文章 URL，禁止根据标题推测/生成 URL
+    - 特别注意：张鑫旭博客的 URL slug 与文章标题不对应，必须从 <a> 标签的 href 属性获取
+    - 使用浏览器抓取时，从 snapshot 中的 link 元素获取 url 属性
+    - WebFetch 返回的 markdown 可能丢失链接信息，此时必须用浏览器重新抓取
 
 return_format: JSON
 ```
@@ -181,6 +186,7 @@ return_format: JSON
 适用场景:
   - ProductHunt (403 on WebFetch)
   - Latent Space (Substack JS 渲染)
+  - zhangxinxu博客 (WebFetch丢失链接URL，需从DOM提取真实href，否则会导致404)
   - 其他 SPA 应用
 ```
 

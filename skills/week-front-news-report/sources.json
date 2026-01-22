@@ -21,24 +21,23 @@
     },
     "tier2": {
       "description": "中等命中率，按需抓取",
-      "batch_a": [
-        {
-          "id": "zhangxinxu",
-          "name": "zhangxinxu's blog",
-          "url": "https://www.zhangxinxu.com/wordpress/",
-          "fetch_method": "webfetch",
-          "extract": "top_voted",
-          "enabled": true,
-          "avg_quality": 4.8,
-          "success_rate": 0.98,
-          "note": ""
-        }
-      ],
+      "batch_a": [],
       "batch_b": []
     },
     "tier3_browser": {
       "description": "需要浏览器渲染的源",
       "sources": [
+        {
+          "id": "zhangxinxu",
+          "name": "zhangxinxu's blog",
+          "url": "https://www.zhangxinxu.com/wordpress/",
+          "fetch_method": "browser",
+          "extract": "top_voted",
+          "enabled": true,
+          "avg_quality": 4.8,
+          "success_rate": 0.98,
+          "note": "必须使用浏览器抓取以获取真实文章URL，WebFetch会丢失链接信息导致URL 404"
+        },
         {
           "id": "juejin",
           "name": "juejin week ranking",
