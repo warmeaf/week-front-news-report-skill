@@ -6,7 +6,7 @@
 
 实际生成效果的演示文档：[2026-W04-news-report.md](NewsReport/2026-W04-news-report.md)
 
-首次使用该 Skill 时，为避免干扰，最好直接删除
+首次使用该 Skill 时，为避免干扰，最好先删除上面提到的演示文档
 
 ## 项目简介
 
