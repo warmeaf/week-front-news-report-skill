@@ -4,7 +4,7 @@
 
 ## 项目简介
 
-Week Front News Report 是一个智能化的中文前端技术周刊聚合工具，基于 Cursor IDE 的 Agent Skill 架构，从高质量中文博客抓取内容，筛选生成每周 Markdown 报告。
+Week Front News Report 是一个智能化的中文前端技术周刊聚合工具，基于 AI Agent + Agent Skills + MCP 架构，从高质量中文博客抓取内容，筛选生成每周 Markdown 报告。
 
 ## 核心特性
 
