@@ -2,6 +2,12 @@
 
 > 自动化前端技术周刊聚合系统，参考：https://github.com/rookie-ricardo/erduo-skills
 
+## 效果演示
+
+实际生成效果的演示文档：[2026-W04-news-report.md](NewsReport/2026-W04-news-report.md)
+
+首次使用该 Skill 时，为避免干扰，最好直接删除
+
 ## 项目简介
 
 Week Front News Report 是一个智能化的前端技术周刊聚合工具，基于 AI Agent + Agent Skills + MCP 架构，从预设的数据源链接中抓取内容，筛选生成每周 Markdown 报告。
