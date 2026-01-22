@@ -1,0 +1,73 @@
+{
+  "version": "2.1",
+  "last_updated": "2026-01-21",
+  "sources": {
+    "tier1": {
+      "description": "高命中率源，优先抓取",
+      "batch_a": [
+        {
+          "id": "ruanyifeng",
+          "name": "ruanyifeng's blog",
+          "url": "https://www.ruanyifeng.com/blog/",
+          "fetch_method": "webfetch",
+          "extract": "top_10",
+          "enabled": true,
+          "avg_quality": 4.5,
+          "success_rate": 0.95,
+          "note": "根据 url 获取最新一期周刊的地址，根据最新的周刊地址获取周刊内容"
+        }
+      ],
+      "batch_b": []
+    },
+    "tier2": {
+      "description": "中等命中率，按需抓取",
+      "batch_a": [
+        {
+          "id": "zhangxinxu",
+          "name": "zhangxinxu's blog",
+          "url": "https://www.zhangxinxu.com/wordpress/",
+          "fetch_method": "webfetch",
+          "extract": "top_voted",
+          "enabled": true,
+          "avg_quality": 4.8,
+          "success_rate": 0.98,
+          "note": ""
+        }
+      ],
+      "batch_b": []
+    },
+    "tier3_browser": {
+      "description": "需要浏览器渲染的源",
+      "sources": [
+        {
+          "id": "juejin",
+          "name": "juejin week ranking",
+          "url": "https://juejin.cn/hot/articles/6809637767543259144",
+          "fetch_method": "browser",
+          "extract": "today_top_5",
+          "enabled": true,
+          "avg_quality": 4.2,
+          "success_rate": 0.75,
+          "note": "需要无头浏览器，403 on WebFetch"
+        }
+      ]
+    }
+  },
+  "fetch_config": {
+    "webfetch": {
+      "timeout_ms": 30000,
+      "retry_count": 1,
+      "cache_ttl_minutes": 60
+    },
+    "browser": {
+      "timeout_ms": 45000,
+      "wait_for_selector": "article, .post, .item",
+      "screenshot_on_error": true
+    }
+  },
+  "quality_thresholds": {
+    "min_score_to_include": 3,
+    "target_items": 20,
+    "early_stop_threshold": 25
+  }
+}
