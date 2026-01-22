@@ -1,6 +1,6 @@
 ---
 name: week-front-news-report
-description: 基于预设 URL 列表抓取内容，筛选高质量前端技术信息并生成每周 Markdown 报告。
+description: 基于预设 URL 列表抓取内容，筛选高质量前端技术信息并生成每周 Markdown 报告。当用户要求生成生成每周前端报告时使用该 Skill。
 argument-hint: [可选: 日期]
 disable-model-invocation: false
 user-invocable: true
